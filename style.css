@@ -150,6 +150,8 @@ main {
 /* code voor de rode ribbon */
 /**********************/
 
+/* bron: Clippy - CSS clip-path maker- https://bennettfeely.com/clippy/ */
+
 .home main>section:nth-of-type(1) article:nth-of-type(1) {
     z-index: 4;
     height: 12em;
@@ -697,6 +699,8 @@ main>section:nth-of-type(5) {
     position: relative;
 }
 
+
+/* bron: Clippy - CSS clip-path maker- https://bennettfeely.com/clippy/ */
 main>div:nth-of-type(3) {
     position: relative;
     clip-path: ellipse(65% 60% at 52% 100%);
@@ -969,6 +973,8 @@ footer>section:nth-of-type(1) p {
     background-image: url(Images/triangles-orange-2x.png);
     background-color: #F47F33;;
 }
+
+/* bron: Clippy - CSS clip-path maker- https://bennettfeely.com/clippy/ */
 .newsPage>header>section:nth-of-type(1) {
     background-image: url(Images/scene-bg.jpg);
     background-size: 100%;
@@ -996,6 +1002,8 @@ footer>section:nth-of-type(1) p {
     margin-bottom: -6em;
 }
 
+
+/* bron: Clippy - CSS clip-path maker- https://bennettfeely.com/clippy/ */
 .newsPage>header>section:nth-of-type(2) {
 z-index: 4;
 height: 5em;
@@ -1021,6 +1029,7 @@ justify-content: center;
 /*  Artikelen  */
 /**********************/
 
+/* bron: Complete Guide to Grid - CSS Tricks- https://css-tricks.com/snippets/css/complete-guide-grid/ */
 .newsPage > main > section:nth-of-type(1) {
     width: 80%;
     margin: 0 auto;

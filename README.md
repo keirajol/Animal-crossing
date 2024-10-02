@@ -40,6 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
+
   <img src="ReadMe-Images/AnimalCrossing-home-OG.png" width="375px" alt="Animal Crossing homepage screenshot">
 
   #### Screenshot(s) van de tweede pagina (small screen):
@@ -84,6 +85,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
+      <img src="ReadMe-Images/SS-week1.png" width="375px" alt="Animal Crossing home page screenshot">
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -105,6 +107,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
+<img src="ReadMe-Images/SS-week2-img1.png" width="375px" alt="Animal Crossing news page screenshot">
+<img src="ReadMe-Images/SS-week2-img2.png" width="375px" alt="Animal Crossing news page screenshot">
+<img src="ReadMe-Images/SS-week2-img3.png" width="375px" alt="Animal Crossing news page screenshot">
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Ik was al best ver met de Home pagina. Ik had een paar problemen waar ik zelf niet uit kom. ik wou namelijk dat een section een rode einde had maar dat krijg ik niet voor elkaar. 
@@ -143,7 +148,7 @@ Oplossing: aspect-ratio: 1;
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
+  
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   - de Headings stonden nog niet allemaal goed heb ik aangepast.
@@ -162,6 +167,7 @@ Oplossing: aspect-ratio: 1;
 
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
+  <img src="ReadMe-Images/SS-week3-img1.png" width="375px" alt="Animal Crossing news page screenshot">
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
@@ -192,6 +198,10 @@ Oplossing: aspect-ratio: 1;
   ### Je uitkomst - karakteristiek screenshots:
 
   <img src="ReadMe-Images/SS-eindproduct.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="ReadMe-Images/SS-eind-img1.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="ReadMe-Images/SS-eind-img2.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="ReadMe-Images/SS-eind-img3.png" width="375px" alt="uitkomst opdracht 1">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -207,7 +217,7 @@ Oplossing: aspect-ratio: 1;
 
   - ik vond de ronde onderkant krijgen erg lastig en heb ik best veel moeite mee gehad om het goed te krijgen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="ReadMe-Images/SS-rondeonderknat.png" width="375px" alt="bummer">
 </details>
 
 
