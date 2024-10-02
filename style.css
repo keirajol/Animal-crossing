@@ -47,6 +47,7 @@ a[class="button"]:hover {
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
     animation: button-rainbow 2s linear infinite;
     cursor: pointer;
+    color: #000000;
 }
 
 @keyframes button-rainbow {
@@ -432,8 +433,8 @@ iframe {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     border: 0.7em solid white;
     border-radius: 1em;
-    width: 50.2em;
-    height: 28.25em;
+    width: 60vw;
+    height: 35vw;
 }
 
 main>section:nth-of-type(3) p {
@@ -1039,55 +1040,3 @@ justify-content: center;
 .newsPage > main > section:nth-of-type(1)>a[class="button"] {
     grid-column: span 3;
 }
-
-
-
-
-
-/* 
-@media (max-width: 480px) {
-
-    main>section:nth-of-type(2)>div:nth-of-type(2) {
-        flex-direction: column;
-        padding: 1px;
-    }
-
-    main>section:nth-of-type(2)>div:nth-of-type(2) article {
-        width: 90%;
-    
-    }
-
-    img[src="Images/char-balloon_2x.png"] {
-        display: none;
-    }
-
-
-    img[src="Images/apple_2.png"] {
-        display: none;
-    }
-
-    img[src="Images/char-isabelle_2x.png"] {
-        display: none;
-    }
-
-    main > section:nth-of-type(6) div > div  {
-        flex-direction: column;
-        padding: 1px;
-    }
-
-
-main>section:nth-of-type(4) article div{
-    flex-direction: column;
-    width: 100%;
-}
-
-main>section:nth-of-type(4) article div>div {
-    width: 100%;
-    padding: 1px;
-}
-
-main>section:nth-of-type(4) article {
-    margin: 8px;
-    width: 64%;
-}
-} */
