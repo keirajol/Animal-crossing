@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>Animal Crossing</title>
   </head>
-  <body>
+  <body class="home">
     <header>
       <nav>
-        <img src="Images/Nintendo-logo-white.png" alt="Nintendo logo" />
+        <img src="Images/Nintendo-logo-white.png" alt="Nintendo logo in wit" />
         <section>
-          <img src="Images/profile.png" alt="Profile icon" />
-          <a href="#">Log in / Sign up</a>
+          <img src="Images/profile.png" alt="Profielicoon" />
+          <a href="news.html">Log in / Sign up</a>
         </section>
       </nav>
 
       <div>
         <p>REDUCE MOTION</p>
       </div>
-      <img src="Images/backgroundImage.png" alt="" />
+      <h1><img src="Images/backgroundImage.png" alt="Animal Crossing" /></h1>
     </header>
+
     <main>
       <section>
         <article>
@@ -29,96 +30,300 @@
             <h5>Today is</h5>
             <h3>Whitney's birthday</h3>
             <div>
-              <button>Button 1</button>
-              <button>Button 2</button>
+              <button>&lt;</button>
+              <button>></button>
             </div>
           </section>
           <section>
-            <img src="Images/wolfImage.png" alt="" />
+            <img src="Images/confetti_2x.png" alt="Feestconfetti" />
+            <img src="Images/wolfImage.png" alt="Afbeelding van een wolf" />
           </section>
+
           <section>
-            <img src="Images/birthday-giftbox_2x.png" alt="" />
-            <p>Celebrate this birthday</p>
+            <button
+              onclick="document.getElementById('confetti').style.display='block';"
+            >
+              <img src="Images/birthday-giftbox_2x.png" alt="" />
+              <span>Celebrate this birthday</span>
+            </button>
           </section>
         </article>
       </section>
 
-      
+      <div id="confetti">
+        <img src="Images/confetti_2x.png" alt="Feestconfetti" />
+      </div>
+
       <section>
         <div><h2>Animal Crossing News</h2></div>
         <div>
           <article>
-            <h5>Jun 10, 2024</h5>
-            <p>Animal Crossing: New Horizons aquarium partnership expands into a national tour</p>
-            <img src="Images/Aquarium.png" alt="" />
-            <a href="#">Keep reading></a>
+            <time datetime="2024-06-10">jun 10 2024</time>
+            <p>
+              Animal Crossing: New Horizons aquarium partnership expands into a
+              national tour
+            </p>
+            <img
+              src="Images/Aquarium.png"
+              alt="Afbeelding van het Animal Crossing aquarium"
+            />
+            <a href="news.html" aria-label="lees meer over">Keep reading></a>
           </article>
           <article>
-            <h5>Feb 4, 2024</h5>
-            <p>Missions and Rewards: Animal Crossing birthday icons for February</p>
-            <img src="Images/Missions_Rewards-Icons.png" alt="" />
-            <a href="#">Keep reading></a>
+            <time datetime="2024-02-04">feb 04, 2024</time>
+            <p>
+              Missions and Rewards: Animal Crossing birthday icons for February
+            </p>
+            <img
+              src="Images/Missions_Rewards-Icons.png"
+              alt="Animal Crossing verjaardagspictogrammen voor februari"
+            />
+            <a href="news.html">Keep reading></a>
           </article>
           <article>
-            <h5>Nov 10, 2023</h5>
-            <p>Missions and Rewards: Animal Crossing birthday icons for November</p>
-            <img src="Images/MissionsRewards2.png" alt="" />
-            <a href="#">Keep reading></a>
+            <time datetime="2023-11-04">nov 04, 2023</time>
+            <p>
+              Missions and Rewards: Animal Crossing birthday icons for November
+            </p>
+            <img
+              src="Images/MissionsRewards2.png"
+              alt="Animal Crossing verjaardagspictogrammen voor november"
+            />
+            <a href="news.html">Keep reading></a>
           </article>
         </div>
-        <button>See all news</button>
+        <div>
+          <a href="news.html" class="button">See all news</a>
+        </div>
       </section>
 
       <section>
-        <iframe
-
-          src="https://www.youtube.com/embed/TepsG9MkgHo"
-
-        ></iframe>
-        <h3>Animal Crossing: New Horizons</h3>
-        <p>New to Animal Crossing: New Horizons? Come get the lay of the land and learn what to expect when you set out to create your own island paradise. If you're an island life veteran already, we hope you will share this video with newcomers and welcome them with open arms!</p>
-        <button>Visit the website</button>
+        <article>
+          <iframe
+            src="https://www.youtube.com/embed/TepsG9MkgHo"
+            title="YouTube video over Animal Crossing: New Horizons"
+          ></iframe>
+          <h4>Animal Crossing: New Horizons</h4>
+          <p>
+            New to Animal Crossing: New Horizons? Come get the lay of the land
+            and learn what to expect when you set out to create your own island
+            paradise. If you're an island life veteran already, we hope you will
+            share this video with newcomers and welcome them with open arms!
+          </p>
+          <a href="news.html" class="button">Visit the website</a>
+        </article>
       </section>
 
+      <div></div>
+
       <section>
-        <img src="Images/apple-border-top_2x.png" alt="">
+        <div>
+          <img
+            src="Images/apple-border-top_2x.png"
+            alt="Afbeelding van appels"
+          />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+          <img src="Images/apple_2.png" alt="Afbeelding van appels" />
+        </div>
         <article>
           <div>
             <div>
-              <img src="Images/pocket-camp-logo-2x.png" alt="">
-              <img src="Images/pocket-camp-art-2x.png" alt="">
+              <img
+                src="Images/pocket-camp-logo-2x.png"
+                alt="Pocket Camp logo"
+              />
+              <img
+                src="Images/pocket-camp-art-2x.png"
+                alt="Afbeelding van Pocket Camp met verschillende ontwerpen"
+              />
             </div>
             <div>
               <h2>Design a campsite that suits your style!</h2>
-              <p>Tents, hammocks, fireplaces, a stuffed-animal sofa...mix and match to your heart's content in the Animal Crossing: Pocket Camp mobile game! Make a trendy open-air café, or line up some microphones and guitars to create an outdoor music festival! You can even make a pool, or fill the sky with fireworks!</p>
-              <button>Learn more</button>
-            </div> 
+              <p>
+                Tents, hammocks, fireplaces, a stuffed-animal sofa...mix and
+                match to your heart's content in the Animal Crossing: Pocket
+                Camp mobile game! Make a trendy open-air café, or line up some
+                microphones and guitars to create an outdoor music festival! You
+                can even make a pool, or fill the sky with fireworks!
+              </p>
+              <a href="news.html" class="button">Learn more</a>
+            </div>
           </div>
         </article>
-        <img src="Images/char-balloon_2x.png" alt="">
+        <img
+          src="Images/char-balloon_2x.png"
+          alt="Afbeelding van een personage met een ballon"
+        />
+      </section>
+
+      <div></div>
+      <section>
+        <div>
+          <ul>
+            <li>
+              <img
+                src="Images/amiibo-isabelle_2x.png"
+                alt="Amiibo figuur van Isabelle in zomerkleding"
+              />
+              <span>Isabelle - Summer Outfit</span>
+            </li>
+            <li>
+              <img
+                src="Images/amiibo-kapn_2x.png"
+                alt="Amiibo figuur van Kapp'n"
+              />
+              <span>Kapp'n</span>
+            </li>
+            <li>
+              <img
+                src="Images/amiibo-rover_2x.png"
+                alt="Amiibo figuur van Rover"
+              />
+              <span>Rover</span>
+            </li>
+            <li>
+              <img
+                src="Images/amiibo-timmytommy_2x.png"
+                alt="Amiibo figuur van Timmy en Tommy"
+              />
+              <span>Timmy & Tommy</span>
+            </li>
+          </ul>
+        </div>
+
+        <h2>Featured amiibo™ figures</h2>
+
+        <a href="news.html" class="button">View amiibo catalog</a>
+
+        <img
+          src="Images/town-footer_2x.png"
+          alt="Afbeelding van de stad footer"
+        />
       </section>
 
       <section>
-        <h2>Featured amiibo™ figures</h2>
+        <img src="Images/char-isabelle_2x.png" alt="Afbeelding van Isabelle" />
         <div>
-            <div></div>
-            <img src="Images/amiibo-isabelle_2x.png" alt="">
-            <span>Isabelle - Summer Outfit</span>
-            <div>
-                <img src="Images/amiibo-isabelle_2x.png" alt="">
-                <span>Isabelle - Summer Outfit</span>
-            </div>
-            <div>
-                <img src="Images/amiibo-isabelle_2x.png" alt="">
-                <span>Isabelle - Summer Outfit</span>
-            </div>
-            <div>
-                <img src="Images/amiibo-isabelle_2x.png" alt="">
-                <span>Isabelle - Summer Outfit</span>
-            </div>
+          <h2>Isabelle and friends on Play Nintendo</h2>
+          <div>
+            <article>
+              <img
+                src="Images/PLAY-6590-MK8DX-MM_1x1_v02_93y2e5M.a4c39dd8.jpg"
+                alt="Afbeelding voor het spel Memory Match"
+              />
+              <img src="Images/icon-match_1.e81c618432d3.png" alt="" />
+              <div>
+                <span>MEMORY MATCH</span>
+                <h4>Beep beep!</h4>
+                <p>
+                  Can you match pairs of racers from the Mario Kart 8 Deluxe
+                  game?
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="Images/PLAY-6588-ACNH-Fall-Poll_1x1_v01.a25bebd1.jpg"
+                alt="Afbeelding voor de poll over herfstactiviteiten"
+              />
+              <img src="Images/icon-poll_1.96a4af5f2080.png" alt="" />
+              <div>
+                <span>POLL</span>
+                <h4>Cozying up to fall</h4>
+                <p>
+                  How do you like to get cozy during fall? You can choose from
+                  activities inspired by the Animal Crossing: New Horizons game!
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="Images/PLAY-6573-B2S2024-PQ_1x1_v01.a25bebd1.jpg"
+                alt="Afbeelding voor de persoonlijkheidsquiz"
+              />
+              <img src="Images/icon-p-quiz_1.2adb910d4fe7.png" alt="" />
+              <div>
+                <span>PERSONALITY QUIZ</span>
+                <h4>Fun facts!</h4>
+                <p>
+                  Blathers knows all about fish and sea creatures, fossils, art,
+                  and bugs. Which subject do you think would best match your
+                  personality?
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <img
+                src="Images/PlayNintendo_ACNH_FirstDayofSchoolSign_1x1.a25bebd1.png"
+                alt="Afbeelding voor de printable sign voor de eerste schooldag"
+              />
+              <img src="Images/icon-print_1.88513aff49b9.png" alt="" />
+              <div>
+                <span>PRINT & PLAY</span>
+                <h4>Sign time</h4>
+                <p>
+                  You can pose with adorable residents from the Animal Crossing:
+                  New Horizons game with this printable sign for the first day
+                  of school!
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div></div>
+
+      <section>
+        <img
+          src="Images/fir-tree-border-2x.png"
+          alt="Afbeelding van een dennenboomrand"
+        />
+
+        <a href="news.html" class="button">Customer support</a>
+
+        <span>Follow Nintendo:</span>
+        <div>
+          <img
+            src="Images/facebook-transparent-logo-400x400.png"
+            alt="Facebook logo"
+          />
+          <img
+            src="Images/twitter-icon-square-logo-108D17D373-seeklogo.com.png"
+            alt="Twitter logo"
+          />
+          <img
+            src="Images/youtube-square-logo-3F9D037665-seeklogo.com.png"
+            alt="YouTube logo"
+          />
+          <img
+            src="Images/instagram-logo-png-transparent-background.png"
+            alt="Instagram logo"
+          />
+        </div>
+
+        <p>
+          Privacy Policy | Terms of Use | Cookie Preferences <br /><br />
+          For Nintendo 3DS systems, use Parental Controls to restrict 3D mode
+          for children 6 and under. Internet access required for online
+          features. For more info, go to support.nintendo.com. Games and amiibo
+          accessories sold separately. Figures shown not actual size.
+          Compatibility and functionality of amiibo may vary per game. Visit
+          amiibo.com for specific details on how each amiibo works. © 2001 -
+          2024 Nintendo. Nintendo properties are trademarks of Nintendo.
+        </p>
+      </section>
+    </footer>
   </body>
 </html>

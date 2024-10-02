@@ -1,11 +1,65 @@
+/**********************/
+/* alegmeen */
+/**********************/
+
+
+*::selection {
+
+    background-color: pink;
+    color: black;
+}
+
+*:focus {
+    background-color: rgb(231, 209, 238);
+    color: black;
+    
+}
+
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Arvo', serif;
+    font-family: 'Arvo', georgia, ;
     font-size: 1.1em;
     color: #834b16;
-    background-color: #fcc32d;
 }
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a[class="button"] {
+    background-color: #c4161c;
+    color: #ffe46a;
+    border-radius: 1em;
+    padding: 15px 45px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    margin: 2em auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+a[class="button"]:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    animation: button-rainbow 2s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes button-rainbow {
+    to {
+        background-position: 20vw;
+    }
+}
+
+
+
+/**********************/
+/* navbar en header */
+/**********************/
 
 header {
     margin: 0;
@@ -13,13 +67,24 @@ header {
     position: relative;
 }
 
-header img {
-    width: 100vw;
+header h1 img{
+    width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
     display: block;
     z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header div {
+    background-color: #FFE46A;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -40,7 +105,7 @@ nav section:first-of-type {
 }
 
 nav img {
-    width: 7%;
+    width: 7vw;
 }
 
 nav section img {
@@ -56,58 +121,35 @@ nav section a {
     padding: 0.5em;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
 
-header div {
-    background-color: #FFE46A;
-    padding: 0.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
+
+/**********************/
+/* inhoud home pagina */
+/**********************/
 main {
     margin: 0;
     padding: 0;
 
 }
 
-button {
-    background-color: #c4161c;
-    color: #ffe46a;
-    border-radius: 1em;
-    padding: 15px 45px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border: none;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
-    display: block;
-    margin: 2em auto;
-    text-align: center;
-}
 
-button:hover {
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
-    animation:button-rainbow 2s linear infinite;
-}
-
-@keyframes button-rainbow {
-    to {
-      background-position:20vw;
-    }
-  }
-
-main section:nth-of-type(1) {
+/**********************/
+/* inhoud eerste section */
+/**********************/
+.home main section:nth-of-type(1) {
     height: 11em;
     background-image: linear-gradient(to right, rgb(197, 5, 21) 50%, rgb(230, 0, 18) 50%);
     background-size: 1em 100%;
     z-index: 0;
 }
 
-main>section:nth-of-type(1) article:nth-of-type(1) {
+
+/**********************/
+/* code voor de rode ribbon */
+/**********************/
+
+.home main>section:nth-of-type(1) article:nth-of-type(1) {
     z-index: 4;
     height: 12em;
     width: 70%;
@@ -130,51 +172,146 @@ article section {
     padding: 1em;
 }
 
-article section:nth-of-type(1) {
+.home article section:nth-of-type(1) {
     background: none;
-    color: black;
-}
-
-main > section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) button:nth-of-type(1) {
     margin: 0;
-    
+    width: 100%;
 }
 
-main > section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) button:nth-of-type(2) {
-    margin: 0;
+article section:nth-of-type(1) h5 {
+    color: #ffe46a;
+    font-weight: bold;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0.2em;
+    font-size: 1.1em;
 
 }
 
-main > section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) button a {
-    clip-path: polygon(100% 0, 2% 50%, 100% 100%);
-    background-color: #fcc32d;
+article section:nth-of-type(1) h3 {
+    color: white;
+    font-size: 1.7em;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 1em;
+}
+
+
+main>section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) div {
+    display: flex;
+    flex-direction: row;
+}
+
+main>section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) button {
+    margin: 0 0.7em;
+    padding: 0.7em 1em;
+    background-color: #c4161c;
+    color: #ffe46a;
+    border-radius: 1em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+article section {
+    position: relative;
 }
 
 article section img:nth-child(1) {
-    width: 70%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+article section img:nth-child(2) {
+    width: 65%;
     z-index: 255;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-article section>img[src="Images/birthday-giftbox_2x.png"] {
-    width: 30%;
+
+article section>button img[src="Images/birthday-giftbox_2x.png"] {
+    width: 50%;
     z-index: 6;
+    
 }
 
-article section:has(> img[src="Images/birthday-giftbox_2x.png"]) {
-    width: 10%;
-    height: 150px;
+article section button:has(> img[src="Images/birthday-giftbox_2x.png"]) {
     border-radius: 100%;
-    background-color: aqua;
+    background-color: #C4161C;
+    box-shadow: 0em 10px 10px rgba(0, 0, 0, 0.397);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: -4em 0 -1em 0;
+    text-align: center;
+    width: 60%;
+    aspect-ratio: 1;
+    border: none;
 }
+
+article section button:has(> img[src="Images/birthday-giftbox_2x.png"]):hover {
+    cursor: pointer;
+}
+
+article section button:has(> img[src="Images/birthday-giftbox_2x.png"]) span {
+    color: #ffe46a;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+}
+
 
 article section>p {
     width: 40%;
     text-align: center;
 }
+
+/**********************/
+/* code voor animatie vallende confetti */
+/**********************/
+main>div:nth-of-type(1) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+main>div:nth-of-type(1) img {
+    position: absolute;
+    width: 100%;
+    animation: fall 5s forwards;
+}
+
+@keyframes fall {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+
+
+/**********************/
+/* code voor 2de sectie */
+/**********************/
+
 
 main>section:nth-of-type(2) {
     background-image: url(Images/triangles-yellow.png);
@@ -183,6 +320,7 @@ main>section:nth-of-type(2) {
     top: 0;
     width: 100%;
     background-color: #fcc32d;
+    background-position: 0 100%;
     z-index: 7;
 }
 
@@ -206,7 +344,7 @@ main>section:nth-of-type(2)>div:nth-of-type(2) {
     align-items: stretch;
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article {
+main>section:nth-of-type(2)>div:nth-of-type(2) article,.newsPage>main>section:nth-of-type(1) article {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -219,47 +357,75 @@ main>section:nth-of-type(2)>div:nth-of-type(2) article {
     width: 30%;
     flex-grow: 1;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
-
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article h5 {
+main>section:nth-of-type(2)>div:nth-of-type(2) article time, .newsPage>main>section:nth-of-type(1) article time {
     color: #36afb6;
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin: 1em;
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article p {
+main>section:nth-of-type(2)>div:nth-of-type(2) article p, .newsPage>main>section:nth-of-type(1) article p {
     font-size: 1.2em;
     line-height: 1.4;
     font-weight: bolder;
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article img {
+main>section:nth-of-type(2)>div:nth-of-type(2) article img, .newsPage>main>section:nth-of-type(1) article img {
     border-radius: 1em;
     margin: 1em;
     width: 90%;
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article a {
+main>section:nth-of-type(2)>div:nth-of-type(2) article a, .newsPage>main>section:nth-of-type(1) article a {
     text-decoration: none;
     color: #c4161c;
     font-size: 1.1em;
     font-weight: bold;
 }
 
-main>section:nth-of-type(2)>div:nth-of-type(2) article:hover {
+main>section:nth-of-type(2)>div:nth-of-type(2) article:hover, .newsPage>main>section:nth-of-type(1) article:hover {
     outline: 0.3em solid #c4161c;
     transform: scale(1.05);
+    cursor: pointer;
 }
+
+main>section:nth-of-type(2) div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+}
+
+main>section:nth-of-type(2)>div:nth-of-type(2) article:hover a, .newsPage>main>section:nth-of-type(1) article:hover a {
+    text-decoration: #f7aa18 underline wavy 3px;
+}
+
+
+/**********************/
+/* code voor 3de sectie */
+/**********************/
 
 main>section:nth-of-type(3) {
     display: flex;
+    background-color: #fcc32d;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main>section:nth-of-type(3) article {
     margin: 21em auto 0 auto;
+    display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     width: 52%;
 }
 
+main>section:nth-of-type(3) article h4 {
+    font-size: 1.3em;
+}
 
 iframe {
     display: block;
@@ -277,29 +443,166 @@ main>section:nth-of-type(3) p {
 
 
 
-img[src="Images/apple-border-top_2x.png"] {
 
+/**********************/
+/* code voor 4de sectie */
+/**********************/
+
+main>section:nth-of-type(4)>div {
+    position: relative;
+}
+
+img[src="Images/apple-border-top_2x.png"] {
     width: 100%;
     height: auto;
 }
 
+/**********************/
+/* code voor de vallende appels */
+/**********************/
+
+
+main>section:nth-of-type(4)>div>img:nth-of-type(2) {
+    position: absolute;
+    top: 13px;
+    left: 4.7%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(3) {
+    position: absolute;
+    top: 78px;
+    left: 40.5%;
+    width: 8%;
+    z-index: 10;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(4) {
+    position: absolute;
+    top: 78px;
+    right: 1.3%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+
+main>section:nth-of-type(4)>div>img:nth-of-type(5) {
+    position: absolute;
+    top: 60px;
+    left: 17.5%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(6) {
+    position: absolute;
+    top: 70px;
+    right: 23%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(7) {
+    position: absolute;
+    top: -12px;
+    left: 32.5%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(8) {
+    position: absolute;
+    top: 27px;
+    right: 39%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(4)>div>img:nth-of-type(9) {
+    position: absolute;
+    top: -2px;
+    right: 9%;
+    width: 8%;
+    z-index: 6;
+    transition: transform 0.5s ease;
+}
+
+
+
+/**********************/
+/* code voor de animatie van de appels */
+/**********************/
+
+img[src="Images/apple_2.png"]:hover {
+    animation: shake 0.5s forwards, fall2 3s forwards 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-2px, 2px);
+    }
+
+    50% {
+        transform: translate(2px, -2px);
+    }
+
+    75% {
+        transform: translate(-2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes fall2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(500px);
+    }
+}
+
+
+
+/**********************/
+/* code voor de rest van de 4de sectie */
+/**********************/
+
+
 main>section:nth-of-type(4) {
     position: relative;
-    background: rgb(124,223,255);
-    background: linear-gradient(rgba(124,223,255,1) 0%, rgba(227,248,255,1)40%, rgba(255,255,255,1) 100%);
+    background: rgb(124, 223, 255);
+    background: linear-gradient(rgba(124, 223, 255, 1) 0%, rgba(227, 248, 255, 1)40%, rgba(255, 255, 255, 1) 100%);
+    height: 40em;
 }
 
 
 main>section:nth-of-type(4) article {
     display: flex;
-    width: 60%; 
+    width: 60%;
     background-image: linear-gradient(to right, #8ccca6 50%, #7dc49c 50%);
     background-size: 1em;
     align-items: center;
-    margin: 2em auto; 
-    padding: 2em; 
-    border-radius: 1em; 
+    margin: 0.2em auto;
+    padding: 2em;
+    border-radius: 1em;
     z-index: 3;
+    background-color: #fcc32d;
 }
 
 
@@ -316,29 +619,24 @@ main>section:nth-of-type(4) article img:nth-of-type(2) {
 }
 
 main>section:nth-of-type(4) article div {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     background-image: url(Images/pattern-trees.jpg);
     width: 99.5%;
     border-radius: 1em;
     padding: 1em;
-    
+
 }
 
-main>section:nth-of-type(4) article div > div {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+main>section:nth-of-type(4) article div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 48%; 
+    width: 48%;
     padding: 1em;
     text-align: center;
     line-height: 1.3;
-}
-
-
-main>section:nth-of-type(4) article div button {
-    margin-top: 1em; 
 }
 
 main>section:nth-of-type(4) article div h2 {
@@ -352,50 +650,444 @@ main>section:nth-of-type(4) article div p {
     font-size: 1.1em;
 }
 
+
+/**********************/
+/* code voor zweefende ballon */
+/**********************/
+
+@keyframes ballon {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(150px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 img[src="Images/char-balloon_2x.png"] {
     width: 15%;
     display: block;
-    margin-left: auto; 
-    transform: translateX(-40%) translateY(-160%); 
+    margin-left: auto;
+    position: relative;
+    top: -80%;
+    right: 6%;
     z-index: 255;
+    animation: ballon 10s ease-in-out infinite;
 }
 
 
+
+/**********************/
+/* code voor 5de sectie */
+/**********************/
+
 main>section:nth-of-type(5) {
     background-image: url(Images/green-triangles.png);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
     background-color: #01A623;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+    position: relative;
 }
 
-main > section:nth-of-type(5) img {
-    width: 20%; 
+main>div:nth-of-type(3) {
+    position: relative;
+    clip-path: ellipse(65% 60% at 52% 100%);
+    background-image: url(Images/green-triangles.png);
+    background-color: #01A623;
+    height: 20em;
+    margin-top: 5em;
+
+}
+
+main>section:nth-of-type(5)>h2:nth-of-type(1) {
+    font-size: 2em;
+    position: absolute;
+    top: -5em;
+    color: white;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.1em;
+    font-weight: bolder;
 }
 
 
-main>section:nth-of-type(5) div {
+main>section:nth-of-type(5)>div img {
+    width: 70%;
+    background-color: #5ec34d;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    opacity: 0.2;
+    transition: opacity 2s ease;
+}
+
+main>section:nth-of-type(5):hover>div:nth-of-type(1) img {
+    opacity: 1;
+}
+
+main>section:nth-of-type(5)>div:nth-of-type(1) span {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 0.3em;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+main>section:nth-of-type(5)>div:nth-of-type(1)>ul {
     display: flex;
     flex-direction: row;
     margin: 2em;
 }
 
-main>section:nth-of-type(5) div  {
+main>section:nth-of-type(5)>div:nth-of-type(1)>ul>li {
     display: flex;
     flex-direction: column;
-    background-color: #5ec34d;
     align-items: center;
+
+}
+
+img[src="Images/town-footer_2x.png"] {
+    width: 100%;
+}
+
+main>section:nth-of-type(5)>a[class="button"],
+footer>section:nth-of-type(1)>a[class="button"] {
+    background-color: #FDD10A;
+    color: #834b16;
+    padding: 1.2em 3em;
+}
+
+main>section:nth-of-type(5):hover>div:nth-of-type(1) img:hover {
+    scale: 1.1;
+}
+
+/**********************/
+/* code voor 6de sectie */
+/**********************/
+
+main>section:nth-of-type(6) {
+    background-color: #fdfdea;
+    background-image: url(Images/play-dots.png);
+    display: flex;
+    justify-content: center;
+    padding: 1em 1em 5em 4em;
+}
+
+img[src="Images/char-isabelle_2x.png"] {
+    width: 24%;
+}
+
+img[src="Images/char-isabelle_2x.png"]:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+main>section:nth-of-type(6) h2 {
+    font-size: 2.25em;
+}
+
+main>section:nth-of-type(6) div>div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main>section:nth-of-type(6) div>div article {
+    display: flex;
+    flex-direction: row;
+    border: 0.3em solid black;
+    width: 40%;
+    margin: 1%;
+    background-color: #1ddb81;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 6px 1px 0px rgb(25, 25, 25);
+}
+
+main>section:nth-of-type(6) div>div article:hover {
+    box-shadow: 2px 12px 1px 0px rgb(25, 25, 25);
+    top: -10px;
+    cursor: pointer;
+}
+
+main>section:nth-of-type(6) div>div article:nth-of-type(2) {
+    background-color: #FFF000;
+}
+
+main>section:nth-of-type(6) div>div article:nth-of-type(3) {
+    background-color: #00D2FF;
+}
+
+main>section:nth-of-type(6) div>div article:nth-of-type(2) img:nth-of-type(2) {
+    border: 0.5em solid #FFF000;
+}
+
+main>section:nth-of-type(6) div>div article:nth-of-type(3) img:nth-of-type(2) {
+    border: 0.5em solid #00D2FF;
+}
+
+main>section:nth-of-type(6) div>div article div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    padding-right: 1em;
+}
+
+
+/**********************/
+/* code voor de draaiende span */
+/**********************/
+
+main>section:nth-of-type(6) div>div article div span {
+    font-size: 0.6em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    display: flex;
+    width: fit-content;
+    align-items: flex-end;
+    border-radius: 2em;
+    padding: 0.5em;
+    font-weight: bold;
+    transform-style: preserve-3d;
+    transform-origin: center 50%;
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(6) div>div article:hover div span {
+    transform: rotateX(360deg);
+    transition: transform 0.5s ease;
+}
+
+main>section:nth-of-type(6) div>div article div h4 {
+    color: black;
+    margin: 2px;
+    font-size: 1.2em;
+}
+
+main>section:nth-of-type(6) div>div article div p {
+    font-size: 0.875em;
+    color: black;
+    width: 80%;
+    text-align: right;
+}
+
+main>section:nth-of-type(6) div>div article img:nth-of-type(1) {
+    width: 50%;
+    height: 100%;
+    z-index: 3;
+    left: 0;
+}
+
+main>section:nth-of-type(6) div>div article img:nth-of-type(2) {
+    width: 10%;
+    height: auto;
+    padding: 0.3em;
+    background-color: white;
     border-radius: 100%;
-    padding: -20em;
-    width: 20%;
+    border: 0.5em solid #1ddb81;
+    display: flex;
+    z-index: 255;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-main>section:nth-of-type(5) > div:nth-of-type(2) {
-    background-color: #5ec34d;
-    width: 20%;
+
+/**********************/
+/* Footer */
+/**********************/
+
+footer>div:nth-of-type(1) {
+    height: 1em;
+    background-image: linear-gradient(to right, rgb(197, 5, 21) 50%, rgb(230, 0, 18) 50%);
+    background-size: 1em 100%;
 }
 
+footer>section:nth-of-type(1)>img {
+    height: 126px;
+    width: 100%;
+}
+
+
+footer>section:nth-of-type(1) {
+    background-image: url(Images/play-dots.png);
+    background-color: #f7aa18;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+
+footer>section:nth-of-type(1) a[class="button"]  {
+    margin-top: 5em;
+}
+
+footer>section:nth-of-type(1) span {
+    color: black;
+    font-size: 1.2em;
+}
+
+footer>section:nth-of-type(1)>div img {
+    width: 4em;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+footer>section:nth-of-type(1) p {
+    text-align: center;
+    width: 80%;
+    color: black;
+    line-height: 2;
+    font-size: 0.8em;
+}
+
+
+
+
+
+/**********************/
+/*  nieuws pagina  */
+/**********************/
+
+
+/**********************/
+/* Header */
+/**********************/
+.newsPage {
+    background-image: url(Images/triangles-orange-2x.png);
+    background-color: #F47F33;;
+}
+.newsPage>header>section:nth-of-type(1) {
+    background-image: url(Images/scene-bg.jpg);
+    background-size: 100%;
+    height: 70%;
+    clip-path: ellipse(62% 65% at 50% 39%);
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: row;     
+}
+
+.newsPage>header>section:nth-of-type(1) img {
+    width: 20%; 
+    margin: 0 -0.6em;
+    position: relative; 
+}
+
+.newsPage>header>section:nth-of-type(1) img:nth-of-type(1) {
+    z-index: 2; 
+
+}
+
+.newsPage>header>section:nth-of-type(1) img:nth-of-type(2) {
+    z-index: 1; 
+    margin-bottom: -6em;
+}
+
+.newsPage>header>section:nth-of-type(2) {
+z-index: 4;
+height: 5em;
+width: 70%;
+background-color: #b01519;
+clip-path: polygon(70% 0, 68% 50%, 70% 100%, 30% 100%, 32% 50%, 30% 0);
+margin: -2.5em auto 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.newsPage>header>section:nth-of-type(2) h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+
+
+/**********************/
+/*  Artikelen  */
+/**********************/
+
+.newsPage > main > section:nth-of-type(1) {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2em; 
+    margin-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.newsPage > main > section:nth-of-type(1) article {
+    width: 20vw;
+    margin: 0 auto; 
+}
+
+.newsPage > main > section:nth-of-type(1)>a[class="button"] {
+    grid-column: span 3;
+}
+
+
+
+
+
+/* 
+@media (max-width: 480px) {
+
+    main>section:nth-of-type(2)>div:nth-of-type(2) {
+        flex-direction: column;
+        padding: 1px;
+    }
+
+    main>section:nth-of-type(2)>div:nth-of-type(2) article {
+        width: 90%;
+    
+    }
+
+    img[src="Images/char-balloon_2x.png"] {
+        display: none;
+    }
+
+
+    img[src="Images/apple_2.png"] {
+        display: none;
+    }
+
+    img[src="Images/char-isabelle_2x.png"] {
+        display: none;
+    }
+
+    main > section:nth-of-type(6) div > div  {
+        flex-direction: column;
+        padding: 1px;
+    }
+
+
+main>section:nth-of-type(4) article div{
+    flex-direction: column;
+    width: 100%;
+}
+
+main>section:nth-of-type(4) article div>div {
+    width: 100%;
+    padding: 1px;
+}
+
+main>section:nth-of-type(4) article {
+    margin: 8px;
+    width: 64%;
+}
+} */
