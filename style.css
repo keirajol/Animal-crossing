@@ -2,9 +2,7 @@
 /* alegmeen */
 /**********************/
 
-
 *::selection {
-
     background-color: pink;
     color: black;
 }
@@ -12,17 +10,15 @@
 *:focus {
     background-color: rgb(231, 209, 238);
     color: black;
-
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Arvo', georgia, ;
+    font-family: 'Arvo', Georgia, serif;
     font-size: 1.1em;
     color: #834b16;
 }
-
 
 p {
     margin: 0;
@@ -56,8 +52,6 @@ a[class="button"]:hover {
     }
 }
 
-
-
 /**********************/
 /* navbar en header */
 /**********************/
@@ -75,12 +69,52 @@ header h1 img {
     z-index: 1;
 }
 
+
+/**********************/
+/* Fade in tekst ballon */
+/**********************/
+header > div:nth-of-type(2) {
+    background-color: white;
+    padding: 1.5em 2em 3em 2em;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 87% 75%, 100% 99%, 59% 76%, 0% 75%);
+    z-index: 3;
+    border-radius: 20px;
+    transition: opacity 1s; /* Smooth transition over 1 second */
+    opacity: 0; /* Initially hidden */
+}
+
+header > div:nth-of-type(2) > span {
+    font-size: 1.5em;
+}
+
+header > img:nth-of-type(1) {
+    position: absolute;
+    z-index: 3;
+    width: 350px;
+    right: 10%;
+    top: 35%;
+}
+
+header > img:nth-of-type(1):hover {
+    cursor: pointer;
+}
+
+
+
+/**********************/
+/* Einde fade in tekst ballon */
+/**********************/
 header h1 {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-header div {
+
+header>div:nth-of-type(1) {
     background-color: #FFE46A;
     padding: 0.7em;
     display: flex;
@@ -178,9 +212,10 @@ article section {
     background: none;
     margin: 0;
     width: 100%;
+
 }
 
-article section:nth-of-type(1) h5 {
+article section:nth-of-type(1) span {
     color: #ffe46a;
     font-weight: bold;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
@@ -189,12 +224,12 @@ article section:nth-of-type(1) h5 {
 
 }
 
-article section:nth-of-type(1) h3 {
+article section:nth-of-type(1) h2 {
     color: white;
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin-left: 1em;
+    width: 100%;
+    margin-left: 3em;
 }
 
 
@@ -214,6 +249,7 @@ main>section:nth-of-type(1) article:nth-of-type(1) section:nth-of-type(1) button
     border: none;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
+    
 }
 
 article section {
@@ -432,8 +468,9 @@ main>section:nth-of-type(3) article {
     width: 52%;
 }
 
-main>section:nth-of-type(3) article h4 {
+main>section:nth-of-type(3) article h3 {
     font-size: 1.3em;
+    margin: 2em;
 }
 
 iframe {
@@ -551,7 +588,7 @@ main>section:nth-of-type(4)>div>img:nth-of-type(9) {
 /**********************/
 
 img[src="Images/apple_2.png"]:hover {
-    animation: shake 0.5s forwards, fall2 3s forwards;
+    animation: shake 0.5s linear, fall2 3s forwards 0.5s;
 }
 
 @keyframes shake {
@@ -607,7 +644,7 @@ main>section:nth-of-type(4) article {
     background-image: linear-gradient(to right, #8ccca6 50%, #7dc49c 50%);
     background-size: 1em;
     align-items: center;
-    margin: 0.2em auto;
+    margin: 4em auto;
     padding: 2em;
     border-radius: 1em;
     z-index: 3;
