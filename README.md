@@ -261,7 +261,7 @@ Gebruikt voor meerdere css elementen.
 
 Hier had ik eerst een beetje moeite mee want het lukte niet helemaal. Ik heb daarom een test bestand aangemaakt om het te testen op een simpelere manier. Waardoor het makkelijker werd bij de echt website. 
 
-  <img src="ReadMe-Images/SS-Her-img1" width="375px" alt="bummer">
-  <img src="ReadMe-Images/SS-Her-img2" width="375px" alt="bummer">
-  <img src="ReadMe-Images/SS-Her-img3" width="375px" alt="bummer">
+  <img src="ReadMe-Images/SS-Her-img1.png" width="375px" alt="bummer">
+  <img src="ReadMe-Images/SS-Her-img2.png" width="375px" alt="bummer">
+  <img src="ReadMe-Images/SS-Her-img3.png" width="375px" alt="bummer">
 </details>
