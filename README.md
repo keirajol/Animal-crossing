@@ -253,13 +253,15 @@ Gebruikt voor meerdere css elementen.
 
 
 ## Eindgesprek punten
-- Bij het eindgesprek hebben we besproken dat de javascript code nog mist en ik nog een beetje javascript moet toevoegen voor de herkansing. 
+- Bij het eindgesprek hebben we besproken dat de javascript code nog mist en ik nog een beetje javascript moet toevoegen voor de herkansing. Hiermee moest ik een micro interactie maken. We hebben tijdens het gesprek een besproken hoe javascript een beetje werkt en hoe ik het kan toepassen. 
 - Ook waren de headings levels niet helemaal goed geplaatst en kan dit ook verbeterd worden. 
 
 ### wat ga ik toevoegen:
 - Ik heb met javascript ervoor gezorgd dat wanneer je op de charlotte img klikt in het begint, dat er dan een tekst ballon te voorschijn komt met de tekst 'Hello i'm Charlotte'. Ik vond dit wel een leuke toevoeging voor de website. 
 
-Hier had ik eerst een beetje moeite mee want het lukte niet helemaal. Ik heb daarom een test bestand aangemaakt om het te testen op een simpelere manier. Waardoor het makkelijker werd bij de echt website. 
+Hier had ik eerst een beetje moeite mee want het lukte niet helemaal. Ik heb daarom een test bestand aangemaakt om het te testen op een simpelere manier. Waardoor het makkelijker werd bij de echt website. Door dit eerst te testen kreeg ik meer een idee hoe ik dit kon toepassen bij mijn website. Hierdoor is het ook gelukt om het toetevoegen. 
+
+- De heading levels veranderen was eigenlijk erg makkelijk. Want het moest op de volgorde van 1 t/m 10 bijv. Je mag ook geen headinglevel overslaan. Dit heb ik aangepast.
 
   <img src="ReadMe-Images/SS-Her-img1.png" width="375px" alt="bummer">
   <img src="ReadMe-Images/SS-Her-img2.png" width="375px" alt="bummer">
