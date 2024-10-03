@@ -82,8 +82,8 @@ header > div:nth-of-type(2) {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 87% 75%, 100% 99%, 59% 76%, 0% 75%);
     z-index: 3;
     border-radius: 20px;
-    transition: opacity 1s; /* Smooth transition over 1 second */
-    opacity: 0; /* Initially hidden */
+    transition: opacity 1s; 
+    opacity: 0; 
 }
 
 header > div:nth-of-type(2) > span {

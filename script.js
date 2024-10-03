@@ -1,9 +1,9 @@
-var divv = document.querySelector("header > div:nth-of-type(2)"); 
+var tekstBallon = document.querySelector("header > div:nth-of-type(2)"); 
 var img = document.querySelector("header > img:nth-of-type(1)"); 
 
-function fadeInDiv() {
-    divv.style.opacity = '1'; 
-    divv.style.transition = 'opacity 1s'; 
+function fadeIn() {
+    tekstBallon.style.opacity = '1'; 
+    tekstBallon.style.transition = 'opacity 1s'; 
 }
 
-img.addEventListener("click", fadeInDiv);
+img.addEventListener("click", fadeIn);
