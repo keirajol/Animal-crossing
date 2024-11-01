@@ -73,6 +73,7 @@ header h1 img {
 /**********************/
 /* Fade in tekst ballon */
 /**********************/
+
 header > div:nth-of-type(2) {
     background-color: white;
     padding: 1.5em 2em 3em 2em;
@@ -84,6 +85,10 @@ header > div:nth-of-type(2) {
     border-radius: 20px;
     transition: opacity 1s; 
     opacity: 0; 
+}
+
+header > div:nth-of-type(2).visible {
+    opacity: 1;
 }
 
 header > div:nth-of-type(2) > span {
