@@ -255,6 +255,7 @@ Gebruikt voor meerdere css elementen.
 ## Eindgesprek punten
 - Bij het eindgesprek hebben we besproken dat de javascript code nog mist en ik nog een beetje javascript moet toevoegen voor de herkansing. Hiermee moest ik een micro interactie maken. We hebben tijdens het gesprek een besproken hoe javascript een beetje werkt en hoe ik het kan toepassen. 
 - Ook waren de headings levels niet helemaal goed geplaatst en kan dit ook verbeterd worden. 
+- Het laatste punt was het noteren van mijn read me file. Deze moest ik voor dit gesprek goed noteren. 
 
 ### wat ga ik toevoegen:
 - Ik heb met javascript ervoor gezorgd dat wanneer je op de charlotte img klikt in het begint, dat er dan een tekst ballon te voorschijn komt met de tekst 'Hello i'm Charlotte'. Ik vond dit wel een leuke toevoeging voor de website. 
@@ -267,4 +268,8 @@ Hier had ik eerst een beetje moeite mee want het lukte niet helemaal. Ik heb daa
   <img src="ReadMe-Images/SS-Her-img2.png" width="375px" alt="bummer">
   <img src="ReadMe-Images/SS-Her-img3.png" width="375px" alt="bummer">
    <img src="ReadMe-Images/SS-Her-img4.png" width="375px" alt="bummer">
+
+   ### Dit ging goed/Heb ik geleerd: 
+   - Het aanpassen van de headingslevels ging er goed en was eigenlijk best makkelijk te veranderen. 
+   - Ik heb geleerd hoe je queryselectors kan gebruiken in js en hoe je het goed toepast.
 </details>
