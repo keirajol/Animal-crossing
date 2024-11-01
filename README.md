@@ -266,4 +266,5 @@ Hier had ik eerst een beetje moeite mee want het lukte niet helemaal. Ik heb daa
   <img src="ReadMe-Images/SS-Her-img1.png" width="375px" alt="bummer">
   <img src="ReadMe-Images/SS-Her-img2.png" width="375px" alt="bummer">
   <img src="ReadMe-Images/SS-Her-img3.png" width="375px" alt="bummer">
+   <img src="ReadMe-Images/verbeterde-JS" width="375px" alt="bummer">
 </details>
